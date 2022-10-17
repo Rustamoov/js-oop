@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #263238;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: #263238;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.header__content {
+    margin: auto;
+    text-align: center;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4527A0;
+    padding: 15px 10px;
+    width: 100%;
+    z-index: 1;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-link, .header__logo {
+    color: #EEEEEE;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.header__logo {
+    margin-right: 0;
+    font-size: 20px;
+}
+.main {
+    background: #00838F;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    margin: 0 15px;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    height: 300px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info__img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+.info__scroll {
+    width: 60%;
+    padding: 15px;
+    color: #263238;
+}
+.info__scroll-title {
+    padding: 0 10px 8px;
+    border-bottom: 1px solid rgba(38, 50, 56, 0.24);
+    margin-bottom: 10px;
+}
+.info__scroll-desc {
+    line-height: 1.3;
+    font-size: 19px;
+}
+.footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__info {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__info-company {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 300px;
+    transition: .5s;
+}
+.header__menu a {
+    color: grey;
+}
+.header__menu-close {
+    margin-bottom: 20px;
+    text-align: right;
+    margin-top: 10px;
+}
